@@ -1,0 +1,61 @@
+{
+  "sections": [
+    { "id": "basics", "name": "Credit basics" },
+    { "id": "parties", "name": "Parties" },
+    { "id": "amount", "name": "Amount & availability" },
+    { "id": "ship", "name": "Shipment & routing" },
+    { "id": "goods", "name": "Goods" },
+    { "id": "docs", "name": "Documents required" },
+    { "id": "terms", "name": "Conditions & charges" },
+    { "id": "bank", "name": "Bank instructions" }
+  ],
+  "fields": [
+    { "key": "seq", "tag": "27", "label": "Sequence of total", "section": "basics", "type": "text", "required": true, "span": 1 },
+    { "key": "form", "tag": "40A", "label": "Form of documentary credit", "section": "basics", "type": "select", "required": true, "span": 2, "options": ["IRREVOCABLE", "IRREVOCABLE TRANSFERABLE", "IRREVOCABLE STANDBY", "REVOCABLE"] },
+    { "key": "dcNumber", "tag": "20", "label": "Documentary credit number", "section": "basics", "type": "text", "readOnly": true, "span": 1, "placeholder": "Assigned at issue" },
+    { "key": "issueDate", "tag": "31C", "label": "Date of issue", "section": "basics", "type": "date", "required": true, "span": 1 },
+    { "key": "rules", "tag": "40E", "label": "Applicable rules", "section": "basics", "type": "select", "required": true, "span": 2, "options": ["UCP LATEST VERSION", "EUCP LATEST VERSION", "ISP LATEST VERSION", "OTHR"] },
+    { "key": "expiryDate", "tag": "31D", "label": "Date of expiry", "section": "basics", "type": "date", "required": true, "span": 1 },
+    { "key": "expiryPlace", "tag": "31D", "label": "Place of expiry", "section": "basics", "type": "text", "required": true, "span": 2 },
+
+    { "key": "applicant", "tag": "50", "label": "Applicant", "section": "parties", "type": "area", "required": true, "span": 3, "rows": 3 },
+    { "key": "beneficiary", "tag": "59", "label": "Beneficiary", "section": "parties", "type": "area", "required": true, "span": 3, "rows": 3 },
+    { "key": "adviseThrough", "tag": "57a", "label": "Advise through bank", "section": "parties", "type": "text", "span": 3 },
+
+    { "key": "currency", "tag": "32B", "label": "Currency", "section": "amount", "type": "select", "required": true, "span": 1, "options": ["USD", "EUR", "GBP", "JPY", "SGD", "AED", "INR", "CHF", "AUD", "CNY"] },
+    { "key": "amount", "tag": "32B", "label": "Amount", "section": "amount", "type": "num", "required": true, "span": 2 },
+    { "key": "tolPlus", "tag": "39A", "label": "Tolerance +%", "section": "amount", "type": "num", "span": 1 },
+    { "key": "tolMinus", "tag": "39A", "label": "Tolerance \u2212%", "section": "amount", "type": "num", "span": 1 },
+    { "key": "maxAmount", "tag": "39B", "label": "Maximum credit amount", "section": "amount", "type": "text", "span": 1, "placeholder": "NOT EXCEEDING" },
+    { "key": "addlAmounts", "tag": "39C", "label": "Additional amounts covered", "section": "amount", "type": "text", "span": 3 },
+    { "key": "availableWith", "tag": "41a", "label": "Available with", "section": "amount", "type": "text", "required": true, "span": 2 },
+    { "key": "availableBy", "tag": "41a", "label": "Available by", "section": "amount", "type": "select", "required": true, "span": 1, "options": ["BY PAYMENT", "BY DEF PAYMENT", "BY ACCEPTANCE", "BY NEGOTIATION", "BY MIXED PYMT"] },
+    { "key": "draftsAt", "tag": "42C", "label": "Drafts at", "section": "amount", "type": "text", "span": 2, "placeholder": "SIGHT / 90 DAYS AFTER B/L DATE" },
+    { "key": "drawee", "tag": "42a", "label": "Drawee", "section": "amount", "type": "text", "span": 1 },
+    { "key": "deferredDetails", "tag": "42P", "label": "Deferred payment details", "section": "amount", "type": "area", "span": 3, "rows": 2 },
+
+    { "key": "partial", "tag": "43P", "label": "Partial shipments", "section": "ship", "type": "select", "required": true, "span": 1, "options": ["ALLOWED", "NOT ALLOWED", "CONDITIONAL"] },
+    { "key": "transhipment", "tag": "43T", "label": "Transhipment", "section": "ship", "type": "select", "required": true, "span": 1, "options": ["ALLOWED", "NOT ALLOWED", "CONDITIONAL"] },
+    { "key": "takingCharge", "tag": "44A", "label": "Place of receipt / dispatch from", "section": "ship", "type": "text", "span": 1 },
+    { "key": "portLoading", "tag": "44E", "label": "Port of loading / airport of departure", "section": "ship", "type": "text", "required": true, "span": 3 },
+    { "key": "portDischarge", "tag": "44F", "label": "Port of discharge / airport of destination", "section": "ship", "type": "text", "required": true, "span": 3 },
+    { "key": "finalDest", "tag": "44B", "label": "Place of final destination", "section": "ship", "type": "text", "span": 3 },
+    { "key": "latestShip", "tag": "44C", "label": "Latest date of shipment", "section": "ship", "type": "date", "span": 1 },
+    { "key": "shipPeriod", "tag": "44D", "label": "Shipment period", "section": "ship", "type": "text", "span": 2, "placeholder": "Mutually exclusive with 44C" },
+
+    { "key": "incoterm", "tag": "45A", "label": "Incoterm 2020", "section": "goods", "type": "select", "span": 1, "options": ["EXW", "FCA", "FAS", "FOB", "CFR", "CIF", "CPT", "CIP", "DAP", "DPU", "DDP"] },
+    { "key": "incotermPlace", "tag": "45A", "label": "Named place", "section": "goods", "type": "text", "span": 2 },
+    { "key": "goodsDesc", "tag": "45A", "label": "Description of goods and/or services", "section": "goods", "type": "area", "required": true, "span": 3, "rows": 5 },
+
+    { "key": "docsRequired", "tag": "46A", "label": "Documents required", "section": "docs", "type": "area", "required": true, "span": 3, "rows": 9 },
+
+    { "key": "addlConditions", "tag": "47A", "label": "Additional conditions", "section": "terms", "type": "area", "span": 3, "rows": 6 },
+    { "key": "charges", "tag": "71D", "label": "Charges", "section": "terms", "type": "area", "required": true, "span": 3, "rows": 2 },
+    { "key": "presentation", "tag": "48", "label": "Period for presentation (days)", "section": "terms", "type": "num", "required": true, "span": 1 },
+    { "key": "confirmation", "tag": "49", "label": "Confirmation instructions", "section": "terms", "type": "select", "required": true, "span": 2, "options": ["WITHOUT", "MAY ADD", "CONFIRM"] },
+
+    { "key": "reimbursing", "tag": "53a", "label": "Reimbursing bank", "section": "bank", "type": "text", "span": 3 },
+    { "key": "instructions", "tag": "78", "label": "Instructions to paying / accepting / negotiating bank", "section": "bank", "type": "area", "span": 3, "rows": 4 },
+    { "key": "senderInfo", "tag": "72Z", "label": "Sender to receiver information", "section": "bank", "type": "area", "span": 3, "rows": 2 }
+  ]
+}

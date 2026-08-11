@@ -1,0 +1,206 @@
+{
+  "base": {
+    "seq": "1/1",
+    "form": "IRREVOCABLE",
+    "dcNumber": "",
+    "issueDate": "",
+    "rules": "UCP LATEST VERSION",
+    "expiryDate": "",
+    "expiryPlace": "",
+    "applicant": "",
+    "beneficiary": "",
+    "adviseThrough": "",
+    "currency": "USD",
+    "amount": "",
+    "tolPlus": "5",
+    "tolMinus": "5",
+    "maxAmount": "",
+    "addlAmounts": "",
+    "availableWith": "ANY BANK",
+    "availableBy": "BY NEGOTIATION",
+    "draftsAt": "SIGHT",
+    "drawee": "ISSUING BANK",
+    "deferredDetails": "",
+    "partial": "ALLOWED",
+    "transhipment": "NOT ALLOWED",
+    "takingCharge": "",
+    "portLoading": "",
+    "portDischarge": "",
+    "finalDest": "",
+    "latestShip": "",
+    "shipPeriod": "",
+    "incoterm": "CIF",
+    "incotermPlace": "",
+    "goodsDesc": "",
+    "docsRequired": "+ SIGNED COMMERCIAL INVOICE IN 3 ORIGINALS AND 2 COPIES\n+ FULL SET 3/3 CLEAN ON BOARD OCEAN BILLS OF LADING MADE OUT TO ORDER OF ISSUING BANK, MARKED FREIGHT PREPAID AND NOTIFY APPLICANT\n+ PACKING LIST IN 3 ORIGINALS SHOWING GROSS AND NET WEIGHT\n+ CERTIFICATE OF ORIGIN ISSUED BY CHAMBER OF COMMERCE\n+ INSURANCE POLICY OR CERTIFICATE FOR 110 PCT OF CIF VALUE, BLANK ENDORSED, COVERING INSTITUTE CARGO CLAUSES (A)",
+    "addlConditions": "+ ALL DOCUMENTS MUST BEAR THE CREDIT NUMBER\n+ THIRD PARTY DOCUMENTS ACCEPTABLE EXCEPT DRAFTS AND INVOICE\n+ DISCREPANCY FEE OF USD 100.00 PLUS SWIFT CHARGES FOR BENEFICIARY ACCOUNT",
+    "charges": "ALL CHARGES OUTSIDE THE COUNTRY OF THE ISSUING BANK ARE FOR ACCOUNT OF BENEFICIARY",
+    "presentation": "21",
+    "confirmation": "WITHOUT",
+    "reimbursing": "",
+    "instructions": "DOCUMENTS TO BE FORWARDED TO ISSUING BANK IN ONE LOT BY COURIER.\nUPON RECEIPT OF COMPLYING DOCUMENTS WE SHALL REMIT PROCEEDS AS INSTRUCTED.",
+    "senderInfo": ""
+  },
+  "credits": [
+    {
+      "ref": "DC-2024-08871",
+      "corridor": "India \u2192 Singapore \u00b7 Electronics",
+      "overrides": {
+        "dcNumber": "DC-2024-08871", "issueDate": "2024-03-11", "expiryDate": "2024-07-15", "expiryPlace": "SINGAPORE",
+        "applicant": "BHARAT ELECTRONICS DISTRIBUTION PVT LTD\n14 MG ROAD, BENGALURU 560001\nINDIA",
+        "beneficiary": "SINGA MICROSYSTEMS PTE LTD\n8 MARINA VIEW, ASIA SQUARE TOWER 1\nSINGAPORE 018960",
+        "currency": "USD", "amount": "1450000", "portLoading": "SINGAPORE", "portDischarge": "CHENNAI, INDIA",
+        "finalDest": "BENGALURU, INDIA", "latestShip": "2024-06-24", "incoterm": "CIF", "incotermPlace": "CHENNAI",
+        "goodsDesc": "SEMICONDUCTOR ASSEMBLIES AND PRINTED CIRCUIT BOARD MODULES\nAS PER PROFORMA INVOICE PI-SMS-2291 DATED 26 FEB 2024\nCIF CHENNAI, INCOTERMS 2020",
+        "availableWith": "DBS BANK LTD, SINGAPORE", "adviseThrough": "DBS BANK LTD, SINGAPORE (DBSSSGSG)", "confirmation": "MAY ADD"
+      }
+    },
+    {
+      "ref": "DC-2024-09134",
+      "corridor": "Germany \u2192 Brazil \u00b7 Machinery",
+      "overrides": {
+        "dcNumber": "DC-2024-09134", "issueDate": "2024-05-02", "expiryDate": "2024-11-30", "expiryPlace": "FRANKFURT",
+        "applicant": "INDUSTRIA MECANICA PAULISTA SA\nAV PAULISTA 1842, SAO PAULO SP 01310-200\nBRAZIL",
+        "beneficiary": "WERNER MASCHINENBAU GMBH\nINDUSTRIESTRASSE 44, 70565 STUTTGART\nGERMANY",
+        "currency": "EUR", "amount": "2780000", "portLoading": "HAMBURG, GERMANY", "portDischarge": "SANTOS, BRAZIL",
+        "latestShip": "2024-10-31", "incoterm": "CIF", "incotermPlace": "SANTOS", "partial": "NOT ALLOWED",
+        "availableBy": "BY DEF PAYMENT", "draftsAt": "", "deferredDetails": "180 DAYS AFTER BILL OF LADING DATE",
+        "goodsDesc": "CNC MACHINING CENTRES MODEL WM-820 QTY 4 UNITS\nINCLUDING TOOLING PACKAGE AND COMMISSIONING SPARES\nAS PER CONTRACT WMB/IMP/2024/017\nCIF SANTOS, INCOTERMS 2020",
+        "availableWith": "COMMERZBANK AG, FRANKFURT", "confirmation": "CONFIRM", "presentation": "15"
+      }
+    },
+    {
+      "ref": "DC-2025-01120",
+      "corridor": "UAE \u2192 Kenya \u00b7 Commodities",
+      "overrides": {
+        "dcNumber": "DC-2025-01120", "issueDate": "2025-01-14", "expiryDate": "2025-06-04", "expiryPlace": "NAIROBI",
+        "applicant": "GULF AGRI TRADING FZE\nJEBEL ALI FREE ZONE, PLOT S20213\nDUBAI, UNITED ARAB EMIRATES",
+        "beneficiary": "RIFT VALLEY PRODUCE EXPORTERS LTD\nENTERPRISE ROAD, INDUSTRIAL AREA\nNAIROBI, KENYA",
+        "currency": "USD", "amount": "620000", "portLoading": "MOMBASA, KENYA", "portDischarge": "JEBEL ALI, UAE",
+        "latestShip": "2025-04-30", "incoterm": "FOB", "incotermPlace": "MOMBASA", "tolPlus": "10", "tolMinus": "10",
+        "goodsDesc": "KENYAN GRADE AA WASHED ARABICA COFFEE BEANS\n320 METRIC TONS IN 60 KG JUTE BAGS\nCROP YEAR 2024/2025\nFOB MOMBASA, INCOTERMS 2020",
+        "availableWith": "STANDARD CHARTERED BANK KENYA, NAIROBI", "confirmation": "CONFIRM"
+      }
+    },
+    {
+      "ref": "DC-2025-02455",
+      "corridor": "Japan \u2192 India \u00b7 Automotive",
+      "overrides": {
+        "dcNumber": "DC-2025-02455", "issueDate": "2025-02-19", "expiryDate": "2025-08-10", "expiryPlace": "TOKYO",
+        "applicant": "SOUTHERN AUTO COMPONENTS LTD\nHOSUR ROAD, ELECTRONIC CITY, BENGALURU 560100\nINDIA",
+        "beneficiary": "KANDA SEIKI CO LTD\n2-14-1 NIHONBASHI, CHUO-KU, TOKYO 103-0027\nJAPAN",
+        "currency": "JPY", "amount": "184000000", "portLoading": "YOKOHAMA, JAPAN", "portDischarge": "CHENNAI, INDIA",
+        "latestShip": "2025-07-18", "incoterm": "CIF", "incotermPlace": "CHENNAI", "availableBy": "BY ACCEPTANCE",
+        "draftsAt": "90 DAYS AFTER BILL OF LADING DATE", "drawee": "MUFG BANK LTD, TOKYO",
+        "goodsDesc": "PRECISION TRANSMISSION GEARS AND SHAFT ASSEMBLIES\nAS PER PURCHASE ORDER SAC/KSC/25/0088\nCIF CHENNAI, INCOTERMS 2020",
+        "availableWith": "MUFG BANK LTD, TOKYO", "tolPlus": "0", "tolMinus": "0"
+      }
+    },
+    {
+      "ref": "DC-2025-03302",
+      "corridor": "Netherlands \u2192 Vietnam \u00b7 Dairy",
+      "overrides": {
+        "dcNumber": "DC-2025-03302", "issueDate": "2025-03-06", "expiryDate": "2025-07-25", "expiryPlace": "AMSTERDAM",
+        "applicant": "SAIGON NUTRITION JSC\n72 LE THANH TON, DISTRICT 1\nHO CHI MINH CITY, VIETNAM",
+        "beneficiary": "HOLLAND DAIRY EXPORT BV\nHAVENWEG 22, 3089 JJ ROTTERDAM\nNETHERLANDS",
+        "currency": "EUR", "amount": "985000", "portLoading": "ROTTERDAM, NETHERLANDS", "portDischarge": "HO CHI MINH CITY, VIETNAM",
+        "latestShip": "2025-06-30", "incoterm": "CFR", "incotermPlace": "HO CHI MINH CITY", "partial": "ALLOWED", "transhipment": "ALLOWED",
+        "goodsDesc": "WHOLE MILK POWDER 26 PCT FAT, 400 METRIC TONS\nPACKED IN 25 KG MULTIWALL PAPER BAGS\nCFR HO CHI MINH CITY, INCOTERMS 2020",
+        "availableWith": "ING BANK NV, AMSTERDAM"
+      }
+    },
+    {
+      "ref": "DC-2025-04781",
+      "corridor": "USA \u2192 Saudi Arabia \u00b7 Oilfield",
+      "overrides": {
+        "dcNumber": "DC-2025-04781", "issueDate": "2025-04-22", "expiryDate": "2025-10-15", "expiryPlace": "HOUSTON",
+        "applicant": "AL RASHID PETROLEUM SERVICES CO\nKING FAHD ROAD, AL KHOBAR 31952\nSAUDI ARABIA",
+        "beneficiary": "PERMIAN VALVE AND FLOW SYSTEMS INC\n4400 POST OAK PARKWAY, HOUSTON TX 77027\nUNITED STATES",
+        "currency": "USD", "amount": "3240000", "portLoading": "HOUSTON, USA", "portDischarge": "DAMMAM, SAUDI ARABIA",
+        "latestShip": "2025-09-20", "incoterm": "CIF", "incotermPlace": "DAMMAM", "partial": "NOT ALLOWED", "confirmation": "CONFIRM",
+        "goodsDesc": "SUBSEA CHOKE VALVES AND FLOW CONTROL SKIDS\nAS PER TECHNICAL SPECIFICATION APS-2025-0441\nCIF DAMMAM, INCOTERMS 2020",
+        "availableWith": "CITIBANK NA, NEW YORK", "reimbursing": "CITIBANK NA, NEW YORK (CITIUS33)"
+      }
+    },
+    {
+      "ref": "DC-2025-05669",
+      "corridor": "China \u2192 Poland \u00b7 Solar",
+      "overrides": {
+        "dcNumber": "DC-2025-05669", "issueDate": "2025-05-30", "expiryDate": "2025-11-28", "expiryPlace": "WARSAW",
+        "applicant": "POLSKA ENERGIA ODNAWIALNA SP Z OO\nUL PROSTA 51, 00-838 WARSZAWA\nPOLAND",
+        "beneficiary": "JIANGSU SOLARTECH MANUFACTURING CO LTD\n188 XINGANG ROAD, WUXI, JIANGSU 214028\nCHINA",
+        "currency": "EUR", "amount": "1670000", "portLoading": "SHANGHAI, CHINA", "portDischarge": "GDANSK, POLAND",
+        "latestShip": "2025-10-31", "incoterm": "CIF", "incotermPlace": "GDANSK", "partial": "ALLOWED",
+        "goodsDesc": "MONOCRYSTALLINE PV MODULES 580W, 12000 PIECES\nTIER 1 CERTIFIED, 30 YEAR PERFORMANCE WARRANTY\nCIF GDANSK, INCOTERMS 2020",
+        "availableWith": "BANK OF CHINA, SHANGHAI BRANCH"
+      }
+    },
+    {
+      "ref": "DC-2025-06914",
+      "corridor": "Australia \u2192 South Korea \u00b7 Ore",
+      "overrides": {
+        "dcNumber": "DC-2025-06914", "issueDate": "2025-06-17", "expiryDate": "2025-10-05", "expiryPlace": "SEOUL",
+        "applicant": "HANGANG STEEL CORPORATION\n55 SEJONG-DAERO, JUNG-GU, SEOUL 04513\nSOUTH KOREA",
+        "beneficiary": "PILBARA RESOURCES EXPORT PTY LTD\nLEVEL 18, 250 ST GEORGES TERRACE, PERTH WA 6000\nAUSTRALIA",
+        "currency": "AUD", "amount": "8900000", "portLoading": "PORT HEDLAND, AUSTRALIA", "portDischarge": "GWANGYANG, SOUTH KOREA",
+        "latestShip": "2025-09-15", "incoterm": "FOB", "incotermPlace": "PORT HEDLAND", "tolPlus": "10", "tolMinus": "10", "partial": "ALLOWED",
+        "goodsDesc": "IRON ORE FINES 62 PCT FE CONTENT\n80000 WET METRIC TONS IN BULK\nFOB PORT HEDLAND, INCOTERMS 2020",
+        "availableWith": "ANZ BANKING GROUP, PERTH", "presentation": "10"
+      }
+    },
+    {
+      "ref": "DC-2025-07208",
+      "corridor": "Switzerland \u2192 India \u00b7 Pharma",
+      "overrides": {
+        "dcNumber": "DC-2025-07208", "issueDate": "2025-07-08", "expiryDate": "2025-12-12", "expiryPlace": "ZURICH",
+        "applicant": "MEDIVANTA HEALTHCARE LTD\nPLOT 32, GENOME VALLEY, HYDERABAD 500078\nINDIA",
+        "beneficiary": "HELVETIA BIOPHARMA AG\nBAHNHOFSTRASSE 210, 8001 ZURICH\nSWITZERLAND",
+        "currency": "CHF", "amount": "740000", "portLoading": "ZURICH AIRPORT, SWITZERLAND", "portDischarge": "HYDERABAD AIRPORT, INDIA",
+        "latestShip": "2025-11-20", "incoterm": "CIP", "incotermPlace": "HYDERABAD", "transhipment": "ALLOWED",
+        "goodsDesc": "ACTIVE PHARMACEUTICAL INGREDIENT BATCH HB-4471\nCOLD CHAIN 2 TO 8 DEGREES CELSIUS THROUGHOUT\nCIP HYDERABAD, INCOTERMS 2020",
+        "docsRequired": "+ SIGNED COMMERCIAL INVOICE IN 3 ORIGINALS AND 2 COPIES\n+ AIR WAYBILL CONSIGNED TO ISSUING BANK MARKED FREIGHT PREPAID\n+ PACKING LIST IN 3 ORIGINALS\n+ CERTIFICATE OF ANALYSIS ISSUED BY MANUFACTURER\n+ GMP CERTIFICATE\n+ COLD CHAIN TEMPERATURE LOG FOR ENTIRE TRANSIT\n+ INSURANCE CERTIFICATE FOR 110 PCT OF CIP VALUE",
+        "availableWith": "UBS SWITZERLAND AG, ZURICH", "confirmation": "CONFIRM"
+      }
+    },
+    {
+      "ref": "DC-2025-08033",
+      "corridor": "Turkey \u2192 UK \u00b7 Textiles",
+      "overrides": {
+        "dcNumber": "DC-2025-08033", "issueDate": "2025-08-01", "expiryDate": "2025-12-19", "expiryPlace": "LONDON",
+        "applicant": "NORTHFIELD APPAREL GROUP PLC\n120 HOLBORN VIADUCT, LONDON EC1A 2BP\nUNITED KINGDOM",
+        "beneficiary": "ANADOLU TEKSTIL SANAYI AS\nORGANIZE SANAYI BOLGESI, DENIZLI 20100\nTURKEY",
+        "currency": "GBP", "amount": "410000", "portLoading": "IZMIR, TURKEY", "portDischarge": "FELIXSTOWE, UNITED KINGDOM",
+        "latestShip": "2025-11-25", "incoterm": "CFR", "incotermPlace": "FELIXSTOWE", "partial": "ALLOWED",
+        "goodsDesc": "COTTON JERSEY KNITWEAR, ASSORTED SIZES\n48000 PIECES AS PER ORDER NAG-AT-2025-14\nCFR FELIXSTOWE, INCOTERMS 2020",
+        "availableWith": "HSBC BANK PLC, LONDON"
+      }
+    },
+    {
+      "ref": "DC-2026-00417",
+      "corridor": "Singapore \u2192 Indonesia \u00b7 Petrochemicals",
+      "overrides": {
+        "dcNumber": "DC-2026-00417", "issueDate": "2026-01-09", "expiryDate": "2026-05-22", "expiryPlace": "JAKARTA",
+        "applicant": "PT NUSANTARA POLYMER INDUSTRI\nJL JEND SUDIRMAN KAV 52, JAKARTA 12190\nINDONESIA",
+        "beneficiary": "STRAITS PETROCHEMICAL TRADING PTE LTD\n1 RAFFLES QUAY, NORTH TOWER\nSINGAPORE 048583",
+        "currency": "USD", "amount": "5100000", "portLoading": "JURONG ISLAND, SINGAPORE", "portDischarge": "TANJUNG PRIOK, INDONESIA",
+        "latestShip": "2026-04-30", "incoterm": "CFR", "incotermPlace": "TANJUNG PRIOK", "tolPlus": "5", "tolMinus": "5", "partial": "ALLOWED",
+        "goodsDesc": "LINEAR LOW DENSITY POLYETHYLENE RESIN GRADE 118W\n6000 METRIC TONS IN 25 KG BAGS ON PALLETS\nCFR TANJUNG PRIOK, INCOTERMS 2020",
+        "availableWith": "OCBC BANK, SINGAPORE", "presentation": "15"
+      }
+    },
+    {
+      "ref": "DC-2026-01885",
+      "corridor": "Canada \u2192 Mexico \u00b7 Agricultural equipment",
+      "overrides": {
+        "dcNumber": "DC-2026-01885", "issueDate": "2026-02-24", "expiryDate": "2026-08-14", "expiryPlace": "TORONTO",
+        "applicant": "AGROINDUSTRIAS DEL BAJIO SA DE CV\nBLVD ADOLFO LOPEZ MATEOS 1200, LEON GTO 37000\nMEXICO",
+        "beneficiary": "PRAIRIE HARVEST EQUIPMENT INC\n1800 CENTRE STREET, WINNIPEG MB R3B 0Y4\nCANADA",
+        "currency": "USD", "amount": "1150000", "portLoading": "MONTREAL, CANADA", "portDischarge": "VERACRUZ, MEXICO",
+        "latestShip": "2026-07-20", "incoterm": "DAP", "incotermPlace": "LEON", "transhipment": "ALLOWED",
+        "goodsDesc": "SELF PROPELLED FORAGE HARVESTERS MODEL PH-900, QTY 6\nWITH HEADER ATTACHMENTS AND SPARE PARTS KIT\nDAP LEON, INCOTERMS 2020",
+        "availableWith": "ROYAL BANK OF CANADA, TORONTO", "availableBy": "BY DEF PAYMENT", "draftsAt": "",
+        "deferredDetails": "120 DAYS AFTER SHIPMENT DATE"
+      }
+    }
+  ]
+}
