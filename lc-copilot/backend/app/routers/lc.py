@@ -37,7 +37,18 @@ def history(db: Session = Depends(get_db)):
         .order_by(LCApplication.reference)
         .all()
     )
-    return [{"reference": r.reference, "corridor": r.corridor} for r in rows]
+    return [
+        {
+            "reference": r.reference,
+            "corridor": r.corridor,
+            "applicant": r.fields.get("applicant", ""),
+            "beneficiary": r.fields.get("beneficiary", ""),
+            "adviseThrough": r.fields.get("adviseThrough", ""),
+            "amount": r.fields.get("amount", ""),
+            "currency": r.fields.get("currency", ""),
+        }
+        for r in rows
+    ]
 
 
 @router.post("/lookup", response_model=LCRecord)

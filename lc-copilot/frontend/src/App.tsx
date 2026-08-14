@@ -2,6 +2,7 @@ import { useCallback, useMemo, useState } from "react";
 
 import Copilot from "./components/Copilot";
 import FormPane from "./components/FormPane";
+import LedgerPane from "./components/LedgerPane";
 import VariantsPane from "./components/VariantsPane";
 import WirePane from "./components/WirePane";
 import { api, ApiError, CONFIDENCE_FLOOR } from "./lib/api";
@@ -18,7 +19,7 @@ const REFERENCE_PATTERN = /\bDC-\d{4}-\d{4,5}\b/i;
 export default function App() {
   const [lc, setLc] = useState<LCFields>(blankCredit);
   const [meta, setMeta] = useState<Record<string, FieldMeta>>({});
-  const [view, setView] = useState<"form" | "wire" | "variants">("form");
+  const [view, setView] = useState<"form" | "wire" | "variants" | "ledger">("form");
   const [section, setSection] = useState("basics");
   const [messages, setMessages] = useState<Message[]>([
     { role: "system", text: "Start from a past credit, a document, or a blank form." },
@@ -293,9 +294,9 @@ export default function App() {
       <div className="body">
         <main className="left">
           <div className="vbar">
-            {(["form", "wire", ...(variants.length ? ["variants" as const] : [])] as const).map((v) => (
+            {(["form", "wire", "ledger", ...(variants.length ? ["variants" as const] : [])] as const).map((v) => (
               <button key={v} className={`vb${view === v ? " on" : ""}`} onClick={() => setView(v)}>
-                {v === "form" ? "Application form" : v === "wire" ? "Wire view" : `Variants (${variants.length})`}
+                {v === "form" ? "Application form" : v === "wire" ? "Wire view" : v === "ledger" ? "All credits" : `Variants (${variants.length})`}
               </button>
             ))}
             {pending.length > 0 && (
@@ -310,6 +311,12 @@ export default function App() {
               lc={lc} meta={meta} errors={errors} warnings={warnings} flash={flash}
               activeSection={section} onSection={setSection} onChange={onChange}
             />
+          )}
+          {view === "ledger" && (
+            <LedgerPane onSelect={(reference) => {
+              loadFromReference(reference);
+              setView("form");
+            }} />
           )}
           {view === "wire" && <WirePane lc={lc} creditNumber={creditNumber} />}
           {view === "variants" && (
